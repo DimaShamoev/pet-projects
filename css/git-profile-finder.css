@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    font-family: "Varela Round", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper {
+    width: 800px;
+    max-width: 600px;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.search-block {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 50px 1px rgb(220, 220, 220);
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 20px;
+}
+
+.search-icon-block {
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-40%);
+    font-size: 22px;
+}
+
+.search-input {
+    width: 100%;
+}
+
+.search-input input {
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px;
+    padding: 5px 35px 5px 35px;
+}
+
+.search-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.search-button button {
+    background-color: rgb(98, 195, 255);
+    color: white;
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+
+    &:hover {
+        background-color: rgb(121, 204, 255);
+    }
+
+    &:active {
+        background-color: rgb(55, 178, 255) ;
+
+    }
+}
+
+.profile-block {
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 50px 1px rgb(220, 220, 220);
+    border-radius: 20px;
+}
+
+.profile-block-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    cursor: default;
+}
+
+.profile-head-main-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.user-bio-block {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.user-name {
+    font-size: 24px;
+}
+
+.user-login {
+    font-size: 14px;
+    color: rgb(0, 102, 255);
+}
+
+.user-bio {
+    font-size: 14px;
+}
+
+.user-join-date {
+    font-size: 18px;
+}
+
+.img-block {
+    border: solid 1px black;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-block img {
+    position: sticky;
+    z-index: 2;
+}
+
+.img-block::before {
+    content: "";
+    position: absolute;
+    height: 80px;
+    width: 100px;
+    background-color: rgb(193, 193, 193);
+    border-radius: 50%;
+    left: 50%;
+    bottom: -100%;
+    transform: translate(-50%, -50%);
+}
+
+.img-block::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(193, 193, 193);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.user-page-info {
+    display: flex;
+    justify-content: right;
+    width: 100%;
+}
+
+.user-page-info-wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 77%;
+    background-color: rgb(230, 230, 230);
+    border-radius: 20px; 
+    padding: 10px 0px;
+}
+
+.followers-block,
+.following-block,
+.repos-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.profile-gape-cnt {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.cnt {
+    font-size: 15px;
+}
+
+.extra-info {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding: 20px 10px;
+}
+
+.extra-info-wrapper {
+    width: 77%;
+    display: grid;
+    justify-content: left;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+
+.extra-info-wrapper i {
+        font-size: 20px;
+        color: black;
+}

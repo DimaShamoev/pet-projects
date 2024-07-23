@@ -1,14 +1,212 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pet Projects Menu</title>
+    <title>Pet Projects List</title>
+    <link rel="web icon" type="png" href="img/me2.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/index.css">
     <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
     <script src="tailwind.config.js"></script>
 </head>
-<body>
-    
 
+<body class="loaded">
+    <div class="overlay">
+        <div class="loading"></div>
+    </div>
+    <div class="container">
+        <header class="bg-black/[0.3] dark:bg-white/[0.3]">
+            <div class="logo">
+                <a href="#">
+                    <img class="nav-logo" src="img/logo-b.png" alt="">
+                </a>
+            </div>
+            <div class="btns">
+                <i
+                    class='bx bx-menu text-white bg-black dark:text-black dark:bg-white hover:bg-white hover:text-black dark:md:hover:bg-black dark:md:hover:text-white cursor-pointer'></i>
+                <a class="text-white bg-black dark:text-black dark:bg-white hover:bg-white hover:text-black dark:md:hover:bg-black dark:md:hover:text-white"
+                    href="projects folder/Projects List/projects-list.html"">PROJECTS</a>
+                <a class="text-white bg-black dark:text-black dark:bg-white hover:bg-white hover:text-black dark:md:hover:bg-black dark:md:hover:text-white"
+                    href="#contact-cont">CONTACT</a>
+                <div
+                    class="mode-btn text-white bg-black dark:text-black dark:bg-white hover:bg-white hover:text-black dark:md:hover:bg-black dark:md:hover:text-white">
+                    <i class='bx bxs-moon'></i></div>
+            </div>
+        </header>
+    </div>
+
+    <div class="aside-menu  bg-white/[0.95] dark:bg-black/[0.9]">
+        <div class="exit-btn">
+            <i class='bx bx-x cursor-pointer text-4xl dark:text-white'></i>
+        </div>
+        <div class="aside-menu-title dark:text-white">
+            MENU
+        </div>
+        <div class="aside-btns">
+            <ul>
+                <li><a class="dark:text-white" href="projects folder/Projects List/projects-list.html"><i class='bx bx-collection'></i> PROJECTS</a></li>
+                <li><a class="dark:text-white" href="#contact-cont"><i class='bx bx-message'></i> CONTACT</a></li>
+            </ul>
+        </div>
+        <hr>
+        <div class="aside-rigths dark:text-white">
+            ©️2024
+        </div>
+
+    </div>
+
+    <main>
+
+        <div class="landing">
+            <div class="container">
+                <div class="landing-content">
+                    <div class="landing-wrapper">
+
+                        <div class="landing-text text-black dark:text-white cursor-default">
+                            <div class="animated-title-cont">
+                                <div class="animated-title">
+                                    Front-End Developer
+                                </div>
+                            </div>
+                            <div class="landing-about-me text-sm">
+                                Hello! I'm a frontend developer, and this is my portfolio. I specialize in creating
+                                engaging and responsive websites. I love turning ideas into reality through clean and
+                                efficient code. Check out my work to see the projects I've completed and the impact they
+                                have made.
+                            </div>
+                            <div class="get-in-touch-btn">
+                                <a class="text-white bg-black dark:text-black dark:bg-white hover:bg-white hover:text-black dark:md:hover:bg-black dark:md:hover:text-white"
+                                    href="#contact-cont">
+                                    Get In Touch <i class='bx bx-chevron-right'></i>
+                                </a>
+                            </div>
+
+                        </div>
+
+                        <div class="landing-pic bg-black/[.3] dark:bg-white/[.3]">
+                            <div class="landing-pic-wrapper">
+                                <img src="img/me3(1).png" alt="">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="projects-list dark:bg-zinc-900/[0.9]">
+            <div class="container">
+                <div class="project-list-content">
+                    <div class="project-list-title text-black dark:text-white">
+                        PROJECTS
+                    </div>
+                    <div class="projects">
+                        <div class="project-block">
+                            <a href="projects folder/To Do List/to-do-list.html">
+                                <div class="project-img">
+                                    <img src="img/project-screen-2.png" alt="">
+                                </div>
+                                <div class="project-name text-black dark:text-white">
+                                    Task Management
+                                </div>
+                                <div class="project-desc text-black dark:text-white">
+                                    Simple Task Management App
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="project-block">
+                            <a href="projects folder/Git Profile Finder/git-profile-finder.html">
+                                <div class="project-img">
+                                    <img src="img/project-screen-1.png" alt="">
+                                </div>
+                                <div class="project-name text-black dark:text-white">
+                                    Git Hub Profile Finder
+                                </div>
+                                <div class="project-desc text-black dark:text-white">
+                                    Find Any GitHub User
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="project-block">
+                            <a href="projects folder/Weather/weather.html">
+                                <div class="project-img">
+                                    <img src="img/project-list-3.png" alt="">
+                                </div>
+                                <div class="project-name text-black dark:text-white">
+                                    Weather App
+                                </div>
+                                <div class="project-desc text-black dark:text-white">
+                                    Check Weather Easily
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="see-more-block bg-black/[.2] dark:bg-white/[.5]">
+                            <a href="projects folder/Projects List/projects-list.html">
+                                <div
+                                    class="see-more-icon bg-black text-white hover:bg-white hover:text-black dark:bg-white dark:text-black dark:md:hover:bg-black dark:md:hover:text-white">
+                                    <i class='bx bx-chevron-right'></i>
+                                </div>
+                                <div class="see-more-name">
+                                    SEE MORE
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contact-cont" class="contact-block bg-stone-100 dark:bg-black/[.89]">
+            <form action="https://formspree.io/f/mldrdgar" method="POST">
+                <div class="form-title text-black dark:text-white">
+                    Let's Talk
+                </div>
+
+                <div class="input-block">
+                    <input class="dark:border-white" name="user" type="text" placeholder="Name" required>
+                </div>
+
+                <div class="input-block">
+                    <input class="dark:border-white" name="email" type="email" placeholder="Email" required>
+                </div>
+
+                <div class="txt-area-block">
+                    <textarea class="dark:border-white" name="message"></textarea>
+                </div>
+
+                <div class="form-btn bg-white hover:bg-black hover:text-white">
+                    <button type="submit">Send Message</button>
+                </div>
+            </form>
+        </div>
+
+    </main>
+
+    <footer class="text-black dark:bg-zinc-900/[0.9] dark:text-white">
+        <div class="copy-right cursor-default">
+            ©️ 2024
+        </div>
+        <div class="social-media">
+            <ul>
+                <li><a class="text-white bg-black hover:text-black hover:bg-gray-300 dark:text-black dark:bg-white dark:md:hover:text-white dark:md:hover:bg-gray-600"
+                        href="https://github.com/DimaShamoev" target="_blank"><i class='bx bxl-github'></i></a></li>
+                <li><a class="text-white bg-black hover:text-black hover:bg-gray-300 dark:text-black dark:bg-white dark:md:hover:text-white dark:md:hover:bg-gray-600"
+                        href="https://www.linkedin.com/in/dima-shamoev-1003a7305/" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+                <li><a class="text-white bg-black hover:text-black hover:bg-gray-300 dark:text-black dark:bg-white dark:md:hover:text-white dark:md:hover:bg-gray-600"
+                        href="#"><i class='bx bxl-facebook-circle'></i></a></li>
+                <li><a class="text-white bg-black hover:text-black hover:bg-gray-300 dark:text-black dark:bg-white dark:md:hover:text-white dark:md:hover:bg-gray-600"
+                        href="#"><i class='bx bxl-instagram-alt'></i></a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script src="js/index.js"></script>
 </body>
+
 </html>

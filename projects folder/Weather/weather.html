@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Projects Menu</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../../css/weather.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="../../tailwind.config.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="title-block">
+                Check The Weather
+            </div>
+
+            <div class="search-input-block">
+                <div class="search-icon">
+                    <i class='bx bx-search'></i>
+                </div>
+
+                <div class="search-input">
+                    <input type="text">
+                </div>
+                <div class="search-btn">
+                    <button>Search</button>
+                </div>
+            </div>
+
+            <div class="weather-info-block">
+                <div class="weather-not-found">
+                    <img src="../../img/not-found.png" alt="">
+                </div>
+                <div class="weather-active">
+                    <div class="weather-img-block appearance-none">
+                        <div class="weather-img">
+                            <img src="../../img/cloudy-img.png" alt="">
+                        </div>
+                        <div class="weather-temp">
+                            <div class="teperature">
+                                0 C
+                            </div>
+                            <div class="temp-info">
+                                Few Clouds
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="weather-info">
+                        <div class="humidity-block">
+                            <div class="himidity-img">
+                                <i class='bx bx-water'></i>
+                            </div>
+                            <div class="humidity-info">
+                                <div class="hum-info-1">0%</div>
+                                <div class="hum-info-2">humidity</div>
+                            </div>
+                        </div>
+
+                        <div class="wind-speed-block">
+                            <div class="wind-speed-img">
+                                <i class='bx bx-wind'></i>
+                            </div>
+                            <div class="wind-speed-info">
+                                <div class="wind-info-1">0Km/H</div>
+                                <div class="wind-info-2">Wind Speed</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../../js/weather.js"></script>
+</body>
+
+</html>

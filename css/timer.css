@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+    font-family: "Varela Round", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #10032a;
+    color: white;
+}
+
+.wrapper {
+    width: 450px;
+    max-width: 400px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.outer-circle {
+    height: 300px;
+    width: 300px;
+    background-color: #4b2574;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.inner-circle {
+    height: 270px;
+    width: 270px;
+    background-color: #924dbf;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    border-radius: 50%;
+    font-size: 28px;
+    cursor: default;
+}
+
+.timer-btns {
+    display: flex;
+    gap: 20px;
+    background-color: #a454ff5e;
+    backdrop-filter: blur(5px);
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.timer-btns button {
+    background-color: #924dbf;
+    padding: 5px 10px;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: #a458d7;
+    }
+
+    &:active {
+        background-color: #7b39a7;
+    }
+}
+
+.lap-list-wrapper {
+    width: 100%;
+    position: relative;
+}
+
+.lap-list {
+    background-color: #4b2574;
+    width: 100%;
+    padding: 45px 10px 10px 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 250px;
+    overflow-y: auto;
+    position: relative;
+}
+
+.lap-list::-webkit-scrollbar {
+    display: none;
+}
+
+.list-block {
+    background-color: #924dbf;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px 50px;
+    border-radius: 10px;
+    width: 100%;
+    cursor: default;
+}
+
+.clear-lap {
+    cursor: pointer;
+    border: 1px solid white;
+    backdrop-filter: blur(10px);
+    padding: 3px 7px;
+    border-radius: 10px;
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 0.2s;
+
+    &:hover {
+        background-color: white;
+        color: black;
+    }
+}
+
+.pulse-anim {
+    animation: circle-pulse linear 2s infinite;
+}
+
+@keyframes circle-pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.03);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

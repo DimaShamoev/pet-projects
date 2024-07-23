@@ -1,0 +1,67 @@
+Pet Projects ---------------------------+
+					|
+easy:					|
+1)to do (completed)			|
+2)timer	(completed)			|
+3)pomodoro clock (OUT)			|
+4)password generator (OUT)		|
+5)Quote Generator (OUT)			|
+6)qr code generator(completed)		|
+7)git profile finder (completed)	|
+					|
+meduim:					|
+1)notes (locals storage)		|
+2)weather app (completed)		|
+3)web cart (OUT)			|
+4)video scroll animation (completed)	|
+5)drawing site (OUT)			|
+6)quiz app*--				|
+7)tic-tac-toe (Maybe)			|
+8)rock-paper-scisors (OUT)		|
+					|
+hard:					|
+1)book web				|
+2)movie web				|
+3)calendar				|
+4)online chat				|
+5)spotify				|
+6)social media				|
+					|
+----------------------------------------+
+
+
+
+
+easy:
+1)https://www.youtube.com/watch?v=c48pBHlnsPE&ab_channel=CodingArtist
+2)https://www.youtube.com/watch?v=XWdH4XwrKrM&ab_channel=Devression
+3)https://www.youtube.com/watch?v=4vAE_tW6Dj4&ab_channel=JrDev
+6)https://www.youtube.com/watch?v=pv5K28zVepE&ab_channel=CodingNepal
+6)https://www.youtube.com/watch?v=LJ4PZ8JnRCg&ab_channel=OpenSourceCoding
+7)https://www.youtube.com/watch?v=Y2GjSVNhwXU&ab_channel=CodeAgam
+
+medium
+1)https://www.youtube.com/watch?v=AkIUtUWpyZs&t=1539s&ab_channel=CodingNepal
+2)https://www.youtube.com/watch?v=2jjR-iGxVYM&ab_channel=Codehal
+3)https://www.youtube.com/watch?v=gXWohFYrI0M&ab_channel=LunDev
+4)https://www.youtube.com/watch?v=4OcAAj8aqS8&ab_channel=iEatWebsites
+5)https://www.youtube.com/watch?v=y84tBZo8GFo&ab_channel=CodingNepal
+6)https://www.youtube.com/watch?v=pQr4O1OITJo&ab_channel=CodingNepal
+7)https://www.youtube.com/watch?v=n6gzxTsbHLc&ab_channel=TheQueen%27sPawn
+8)https://www.youtube.com/watch?v=RC7NbjwP3QA&ab_channel=CodingLab
+
+hard
+1)
+
+have to do:
+easy > 6 & 7
+medium > 2 & 4 & 6
+
+
+
+
+
+
+
+
+

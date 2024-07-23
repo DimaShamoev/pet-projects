@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="web icon" href="../../img/to-do-list-icon.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../../css/to-do-list.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="../../tailwind.config.js"></script>
+</head>
+
+<body>
+
+    <div class="add-task-block">
+        <div class="add-task-block-wrapper">
+            <div class="input-block">
+                <input class="add-text-input-value" type="text">
+            </div>
+
+            <div class="add-icon">
+                &plus;
+            </div>
+
+            <div class="exit-icon">
+                &#x2715;
+            </div>
+        </div>
+    </div>
+
+    <div class="wrapper">
+        <div class="container">
+            <div class="to-do-header">
+                <div class="to-do-list-type">
+                    All Task
+                </div>
+                <div class="detele-tasks-btn">
+                    <i class='bx bx-trash'></i> Delete All
+                </div>
+            </div>
+
+            <div class="add-first-task">
+                <div class="plus-block">
+                    &#x2b;
+                </div>
+                <div class="add-text-block">
+                    Create Your First Task
+                </div>
+            </div>
+            
+    
+            <div class="to-do-list">
+                
+            </div>
+    
+            <div class="to-do-bottom-btns">
+                <i class='bx bx-list-ul checked-btn prechek-btn'></i>
+                <i class='bx bx-check-square prechek-btn'></i>
+                <i class='bx bx-square-rounded prechek-btn'></i>
+                <span><i class='bx bx-plus prechek-btn'></i></span>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../../js/to-do-list.js"></script>
+</body>
+
+</html>

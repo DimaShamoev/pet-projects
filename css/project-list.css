@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root {
+    --light-bg: url("img/bg-w.jpg");
+    --dark-bg: url("img/bg-b.jpg");
+    --light-bg-css: url("../img/bg-w.jpg");
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Varela Round", sans-serif;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    background-color: rgba(65, 65, 65, 0.813);
+    top: 0;
+    right: 0;
+    left: 0;
+    min-height: 100vh;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.overlay .loading {
+    height: 200px;
+    width: 200px;
+    border: solid 10px black;
+    border-radius: 50%;
+    border-left-color: white;
+    animation: loadAnim linear 1s infinite;
+}
+
+@keyframes loadAnim {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.container {
+    max-width: 1650px;
+    margin: auto;
+}
+
+.loaded {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.web-wrapper {
+    padding: 20px 0 0 0;
+}
+
+header {
+    position: sticky;
+    display: flex;
+    width: 800px;
+    max-width: 95vw;
+    align-items: center;
+    justify-content: space-between;
+    backdrop-filter: blur(10px);
+    margin: 0px auto;
+    padding: 10px 30px;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+header .logo a img {
+    height: 50px;
+    width: auto;
+    transition: 0.2s;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+header .btns {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header .btns a,
+.mode-btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.4s;
+
+}
+
+.btns>i {
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    transition: 0.4s;
+    display: none;
+}
+
+.aside-menu {
+    position: fixed;
+    z-index: 3;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 0vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    transition: 0.3s;
+}
+
+.aside-menu.active-aside {
+    width: 100vw;
+
+}
+
+.exit-btn {
+    display: flex;
+    justify-content: right;
+}
+
+.aside-btns ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.aside-btns ul li a {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.aside-btns ul li a i {
+    font-size: 20px;
+}
+
+.aside-menu-title {
+    margin-bottom: 20px;
+    cursor: default;
+}
+
+.aside-btns {
+    margin-bottom: 20px;
+}
+
+.aside-rigths {
+    margin: 20px 0;
+}
+
+/* main */
+.proj-list {
+    display: flex;
+    transition: .3s;
+    padding: 20px 0;
+}
+
+.projects-list-block {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: space-evenly;
+    row-gap: 30px;
+}
+
+.proj-block img {
+    height: 350px;
+    width: 400px;
+}
+
+.proj-name {
+    letter-spacing: 4px;
+    font-size: 20px;
+}
+
+.proje-desc {
+    font-size: 14px;
+}
+
+/* footer */
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 30px 0;
+}
+
+footer ul {
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+}
+
+footer ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 5px;
+    transition: .2s;
+}
+
+@media screen and (max-width:1280px) {
+    .projects-list-block {
+        grid-template-columns: repeat(2, auto);
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .landing {
+        min-height: 800px;
+    }
+
+    .landing-wrapper {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .projects-list-block img {
+        height: 250px;
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    .projects-list-block {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .projects-list-block img {
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 566px) {
+    .animated-title {
+        font-size: 30px;
+
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .btns>i {
+        display: initial;
+    }
+
+    header .btns a {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .animated-title {
+        font-size: 23px;
+
+    }
+}

@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+
+body {
+    font-family: "Varela Round", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #4d8bf0;
+}
+
+.container {
+    width: 550px;
+    max-width: 500px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper {
+    max-width: 500px;
+    background-color: rgba(135, 206, 250, 0.221);
+    backdrop-filter: blur(10px);
+    border: solid 2px rgba(255, 255, 255, 0.200);
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    border-radius: 30px;
+    height: 130px;
+    overflow: hidden;
+    transition: 0.3s ease;
+}
+
+.wrapper.active {
+    height: 765px
+}
+
+.title-block {
+    text-align: left;
+    width: 100%;
+    margin: 0 0 10px 0;
+    color: white;
+    font-size: 30px;
+}
+
+.search-input-block {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.search-icon {
+    position: absolute;
+    top: 55%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+
+.search-input {
+    width: 100%;
+}
+
+.search-input input {
+    width: 100%;
+    padding: 8px 40px;
+    font-size: 20px;
+    border: solid 3px transparent;
+    border-bottom: 3px solid rgb(255, 255, 255);
+    background-color: transparent;
+    color: white;
+
+    &:focus {
+        outline-width: 0;
+    }
+
+}
+
+.search-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-btn button {
+    width: 100%;
+    background-color: white;
+    color: rgb(26, 167, 255);
+    height: 100%;
+    font-size: 20px;
+    padding: 5px 20px;
+    box-sizing: border-box;
+    border: transparent 1px solid;
+    border-radius: 10px;
+    transition: 0.3s;
+
+    &:hover {
+        color: white;
+        background-color: rgb(26, 167, 255);
+        border: white 1px solid;
+    }
+
+    
+}
+
+.weather-img-block {
+    color: white;
+    margin: 10px 0;
+    background-color: rgba(255, 255, 255, 0.050);
+    backdrop-filter: blur(5px);
+    margin: 20px 0;
+    padding: 10px 0;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.weather-not-found {
+    display: none;
+    
+}
+
+.weather-not-found.active {
+    display: block;
+}
+
+.weather-active {
+    display: initial;
+}
+
+.weather-active.deactive {
+    display: none;
+}
+
+.weather-img img {
+    width: auto;
+    height: 300px;
+}
+
+.weather-temp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teperature {
+    font-size: 65px;
+    font-weight: 600;
+    line-height: 1.5;
+    cursor: default;
+}
+
+.temp-info {
+    cursor: default;
+    font-size: 20px;
+}
+
+.weather-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    margin: 30px 0 0 0;
+}
+
+.weather-info i {
+    font-size: 60px;
+}
+
+.humidity-block,
+.wind-speed-block {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hum-info-1,
+.wind-info-1 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.hum-info-2,
+.wind-info-2 {
+    text-shadow: rgb(255, 255, 255) 0px 0px;
+}

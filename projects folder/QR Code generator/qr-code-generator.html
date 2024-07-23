@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="web icon" href="../../img/qr-code.png">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../../css/qr-code.generator.css">
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <script src="../../tailwind.config.js"></script>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="container ">
+            <div class="text-block">
+                QR Code Generator
+            </div>
+            <div class="input-block">
+                <div class="input">
+                    <input type="text" placeholder="Enter Text">
+                </div>
+                <div class="btn">
+                    <button>Generate</button>
+                </div>
+            </div>
+            
+            <div class="qr-code-block">
+                <img height="150px" width="150px" src="../../img/qr-code.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../../js/qr-code-generator.js"></script>
+</body>
+
+</html>
