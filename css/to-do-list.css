@@ -46,7 +46,7 @@ body {
 
 .add-icon {
     position: absolute;
-    left: 50px;
+    left: 40px;
     top: 3px;
     opacity: 0.6;
     font-size: 30px;
@@ -75,13 +75,14 @@ body {
 
 .wrapper {
     width: 800px;
-    max-width: 700px;
+    max-width: 650px;
 }
 
 .container {
     width: 100%;
     padding: 0 20px 0px 20px;
     box-sizing: border-box;
+    margin: auto;
 }
 
 
@@ -213,4 +214,42 @@ body {
 
 .add-text-block {
     font-size: 14px;
+}
+
+@media screen and (max-width: 730px) {
+    .wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: max-content;
+    }
+
+    .container {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .wrapper {
+        width: auto;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .to-do-header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .to-do-bottom-btns {
+        gap: 10px;
+    }
+
+    .add-icon {
+        left: 40px;
+    }
+
+    .input-block input {
+        padding: 10px 20px 10px 50px;
+    }
 }

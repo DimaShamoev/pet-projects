@@ -209,3 +209,29 @@ body {
         font-size: 20px;
         color: black;
 }
+
+@media screen and (max-width: 580px) {
+    .extra-info-wrapper {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+}
+
+@media screen and (max-width: 530px) {
+    .profile-block-head {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 385px) {
+    .user-page-info-wrapper {
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .img-block img {
+        width: auto;
+        height: 100%;
+    }
+}

@@ -193,3 +193,22 @@ body {
 .wind-info-2 {
     text-shadow: rgb(255, 255, 255) 0px 0px;
 }
+
+@media screen and (max-width: 380px) {
+    .title-block {
+        font-size: 17px;
+    }
+
+    .search-input-block {
+        flex-direction: column;
+    }
+    
+    .search-icon {
+        top: 25%;
+        transform: translateY(-50%);
+    }
+
+    .wrapper {
+        height: 160px;
+    }
+}
