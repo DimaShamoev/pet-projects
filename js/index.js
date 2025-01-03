@@ -1,7 +1,5 @@
 window.addEventListener("load", () => {
-    document.querySelector(".overlay").style.display = "none"
-    document.querySelector("body").classList.remove("loaded")
-
+    document.querySelector(".overlay").style.display = "none"  document.querySelector("body").classList.remove("loaded")
     let darkModeBtn = document.querySelector(".bxs-moon");
     let click = false;
 
